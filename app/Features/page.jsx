@@ -326,7 +326,6 @@ function page() {
 
                         {/* Product */}
                         <div className="col-6 col-md-2">
-
                             <h6 className="footerHeading">
                                 Product
                             </h6>
