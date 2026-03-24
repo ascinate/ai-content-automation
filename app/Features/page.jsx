@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import { Circle, Quote, Star } from 'lucide-react';
-import { FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaSquareFacebookk } from 'react-icons/fa6';
 import { IoLogoFacebook } from 'react-icons/io';
@@ -295,37 +295,44 @@ function page() {
 
             <footer className="footerStyle">
 
-                <div className="container">
+                {/* TOP SECTION */}
+
+                <div className="container pt-5 pb-4">
 
                     <div className="row gy-4">
 
-                        {/* Column 1 — Logo + Description */}
+                        {/* Logo + Text */}
+
                         <div className="col-12 col-md-3">
 
-                            <div className="d-flex align-items-center mb-2">
+                            <div className="d-flex align-items-center mb-3">
 
                                 <Image
                                     src="/lo.png"
                                     alt="logo"
-                                    width={35}
-                                    height={35}
+                                    width={40}
+                                    height={40}
                                 />
 
-                                <h5 className="ms-2 mb-0 fw-semibold">
+                                <h5 className="ms-2 text-white fw-semibold">
                                     AI Content Automation
                                 </h5>
 
                             </div>
 
                             <p className="footerText">
-                                AI Content Automation Platform by generating
-                                content, scheduling posts, and tracking results.
+
+                                AI Content Automation Platform to generate,
+                                schedule, and track content effortlessly.
+
                             </p>
 
                         </div>
 
                         {/* Product */}
+
                         <div className="col-6 col-md-2">
+
                             <h6 className="footerHeading">
                                 Product
                             </h6>
@@ -333,15 +340,11 @@ function page() {
                             <ul className="list-unstyled footerLinks">
 
                                 <li>
-                                    <Link className='colorWhite' href="/features">Features</Link>
+                                    <Link href="#">Features</Link>
                                 </li>
 
                                 <li>
-                                    <Link className='colorWhite' href="/pricing">Pricing</Link>
-                                </li>
-
-                                <li>
-                                    <Link className='colorWhite' href="/integrations">Integrations</Link>
+                                    <Link href="#">Pricing</Link>
                                 </li>
 
                             </ul>
@@ -349,6 +352,7 @@ function page() {
                         </div>
 
                         {/* Features */}
+
                         <div className="col-6 col-md-2">
 
                             <h6 className="footerHeading">
@@ -358,15 +362,11 @@ function page() {
                             <ul className="list-unstyled footerLinks">
 
                                 <li>
-                                    <Link className='colorWhite' href="/automation">Automation</Link>
+                                    <Link href="#">About Us</Link>
                                 </li>
 
                                 <li>
-                                    <Link className='colorWhite' href="/analytics">Analytics</Link>
-                                </li>
-
-                                <li>
-                                    <Link className='colorWhite' href="/scheduling">Scheduling</Link>
+                                    <Link href="#">Blog</Link>
                                 </li>
 
                             </ul>
@@ -374,6 +374,7 @@ function page() {
                         </div>
 
                         {/* Company */}
+
                         <div className="col-6 col-md-2">
 
                             <h6 className="footerHeading">
@@ -383,15 +384,11 @@ function page() {
                             <ul className="list-unstyled footerLinks">
 
                                 <li>
-                                    <Link className='colorWhite' href="/about">About</Link>
+                                    <Link href="#">Blog</Link>
                                 </li>
 
                                 <li>
-                                    <Link className='colorWhite' href="/careers">Careers</Link>
-                                </li>
-
-                                <li>
-                                    <Link className='colorWhite' href="/contact">Contact</Link>
+                                    <Link href="#">Contact</Link>
                                 </li>
 
                             </ul>
@@ -399,6 +396,7 @@ function page() {
                         </div>
 
                         {/* Resources */}
+
                         <div className="col-6 col-md-2">
 
                             <h6 className="footerHeading">
@@ -408,21 +406,11 @@ function page() {
                             <ul className="list-unstyled footerLinks">
 
                                 <li>
-                                    <Link className='colorWhite' href="/help-center">
-                                        Help Center
-                                    </Link>
+                                    <Link href="#">Help Center</Link>
                                 </li>
 
                                 <li>
-                                    <Link className='colorWhite' href="/blog">
-                                        Blog
-                                    </Link>
-                                </li>
-
-                                <li>
-                                    <Link className='colorWhite' href="/tutorials">
-                                        Tutorials
-                                    </Link>
+                                    <Link href="#">FAQs</Link>
                                 </li>
 
                             </ul>
@@ -430,33 +418,18 @@ function page() {
                         </div>
 
                         {/* Social Icons */}
+
                         <div className="col-12 col-md-1 text-md-end">
 
-                            <div className="d-flex gap-2 justify-content-md-end mt-3 mt-md-0">
+                            <div className="d-flex gap-2 justify-content-md-end">
 
-                                <Link
-                                    className='colorWhite' href="https://instagram.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <FaInstagram size={30} color="#fff" />
-                                </Link>
+                                <FaTwitter className="socialIcon" />
 
-                                <Link
-                                    className='colorWhite' href="https://facebook.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <IoLogoFacebook size={30} color="#fff" />
-                                </Link>
+                                <FaFacebookF className="socialIcon" />
 
-                                <Link
-                                    className='colorWhite' href="https://twitter.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <FaXTwitter size={30} color="#fff" />
-                                </Link>
+                                <FaLinkedinIn className="socialIcon" />
+
+                                <FaInstagram className="socialIcon" />
 
                             </div>
 
@@ -466,83 +439,119 @@ function page() {
 
                 </div>
 
+                {/* CENTER CARD */}
 
+                <div className="container mb-5">
 
+                    <div className="footerCard">
 
-                {/* testimonials */}
-                <div className="mt-5"
-                    style={{
-                        backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1348%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(48%2c 100%2c 191%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c42 C 48%2c52 144%2c92.4 240%2c92 C 336%2c91.6 384%2c42.2 480%2c40 C 576%2c37.8 624%2c85 720%2c81 C 816%2c77 864%2c23.4 960%2c20 C 1056%2c16.6 1104%2c63.8 1200%2c64 C 1296%2c64.2 1392%2c29.6 1440%2c21L1440 560L0 560z' fill='rgba(67%2c 117%2c 204%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c215 C 16%2c199.8 48%2c144.8 80%2c139 C 112%2c133.2 128%2c183.6 160%2c186 C 192%2c188.4 208%2c148.8 240%2c151 C 272%2c153.2 288%2c199.4 320%2c197 C 352%2c194.6 368%2c141.6 400%2c139 C 432%2c136.4 448%2c182 480%2c184 C 512%2c186 528%2c143.6 560%2c149 C 592%2c154.4 608%2c208.4 640%2c211 C 672%2c213.6 688%2c170.4 720%2c162 C 752%2c153.6 768%2c169.6 800%2c169 C 832%2c168.4 848%2c149.2 880%2c159 C 912%2c168.8 928%2c221.6 960%2c218 C 992%2c214.4 1008%2c150.6 1040%2c141 C 1072%2c131.4 1088%2c170.8 1120%2c170 C 1152%2c169.2 1168%2c135.8 1200%2c137 C 1232%2c138.2 1248%2c176.8 1280%2c176 C 1312%2c175.2 1328%2c128.4 1360%2c133 C 1392%2c137.6 1424%2c185.8 1440%2c199L1440 560L0 560z' fill='rgba(67%2c 117%2c 204%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c262 C 96%2c273.2 288%2c316.2 480%2c318 C 672%2c319.8 768%2c272.4 960%2c271 C 1152%2c269.6 1344%2c303 1440%2c311L1440 560L0 560z' fill='rgba(83%2c 129%2c 209%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c442 C 57.6%2c428.4 172.8%2c375.6 288%2c374 C 403.2%2c372.4 460.8%2c436.6 576%2c434 C 691.2%2c431.4 748.8%2c364.6 864%2c361 C 979.2%2c357.4 1036.8%2c420.8 1152%2c416 C 1267.2%2c411.2 1382.4%2c352.8 1440%2c337L1440 560L0 560z' fill='rgba(117%2c 157%2c 228%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c518 C 96%2c515 288%2c500.2 480%2c503 C 672%2c505.8 768%2c534.6 960%2c532 C 1152%2c529.4 1344%2c498.4 1440%2c490L1440 560L0 560z' fill='rgba(144%2c 177%2c 240%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1348'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e")`
+                        <div className="row align-items-center">
 
-                    }}
+                            {/* LEFT */}
 
-                >
-                    <div className="container">
-                        <div className="row g-5 pt-5 pb-5 align-items-center">
+                            <div className="col-md-6">
 
-                            <div className="col-12 col-md-12 d-flex justify-content-center">
-                                <div className='testimonials1'>
-                                    <div className='d-flex align-items-center mb-2'>
-                                        <Circle fill='#B1C4ED' color='#B1C4ED' />
-                                        <Circle fill='#B1C4ED' color='#B1C4ED' />
-                                    </div>
-                                    <div className='d-flex align-items-center gap-3'>
-                                        <figure
-                                            style={{ width: 80, height: 80, borderRadius: "50%", overflow: "hidden", position: "relative", flexShrink: 0 }}>
-                                            <Image
-                                                src="/dp.png"
-                                                alt="feature image"
-                                                fill
-                                                style={{
-                                                    objectFit: "cover"
-                                                }}
-                                            />
-                                        </figure>
-                                        <p style={{ fontSize: '16px' }}>This platform beare reuolutionized our content
-                                            meketing. Hiihatto fiau clfick, are aer jnin quailty
-                                            Ung adees redial inedia grtonus ouet reports.
-                                            Itn a ganie thanger for product ility.</p>
-                                    </div>
+                                <div className="d-flex align-items-center">
 
+                                    <Image
+                                        src="/lo.png"
+                                        alt="logo"
+                                        width={50}
+                                        height={50}
+                                    />
 
-                                    <div className="d-flex justify-content-between  gap-1">
+                                    <h4 className="ms-2 fw-bold text-primary">
 
+                                        AI Content Automation
 
-                                        <div className="d-flex align-items-center  gap-1">
-                                            <Star size={18} fill="#FFD700" color="#FFD700" />
-                                            <Star size={18} fill="#FFD700" color="#FFD700" />
-                                            <Star size={18} fill="#FFD700" color="#FFD700" />
-                                            <Star size={18} fill="#FFD700" color="#FFD700" />
-                                            <Star size={18} fill="#FFD700" color="#FFD700" />
-
-                                            <p className="mb-0 ms-2" style={{ fontSize: '14px', fontWeight: 500 }}>Sarah kappor . Agency Owner</p>
-                                        </div>
-
-
-                                        <Quote
-                                            size={40}
-                                            fill="#90B1F0"
-                                            color="#90B1F0"
-                                        />
-
-
-
-                                    </div>
-
+                                    </h4>
 
                                 </div>
 
+                                <p className="mt-2 text-muted">
+
+                                    AI Content Automation Platform to generate,
+                                    schedule, and track content effortlessly.
+
+                                </p>
 
                             </div>
 
+                            {/* RIGHT */}
 
-  
+                            <div className="col-md-6 text-md-end">
+
+                                <div className="d-flex gap-2 justify-content-md-end mt-3 mt-md-0">
+
+                                    <FaTwitter className="cardSocial" />
+
+                                    <FaFacebookF className="cardSocial" />
+
+                                    <FaLinkedinIn className="cardSocial" />
+
+                                    <FaInstagram className="cardSocial" />
+
+                                </div>
+
+                                <p className="mt-2 small text-muted">
+
+                                    info@aicontentautomation.com
+
+                                </p>
+
+                                <p className="small text-muted">
+
+                                    Privacy Policy | Terms of Service
+
+                                </p>
+
+                            </div>
 
                         </div>
+
                     </div>
 
                 </div>
 
+                {/* PAYMENT + COPYRIGHT */}
+
+                <div className="container text-center pb-4">
+
+                    <div className="d-flex flex-wrap justify-content-center gap-3 mb-3">
+
+                        <Image
+                            src="/visa.png"
+                            width={50}
+                            height={30}
+                            alt="visa"
+                        />
+
+                        <Image
+                            src="/mastercard.png"
+                            width={50}
+                            height={30}
+                            alt="mastercard"
+                        />
+
+                        <Image
+                            src="/stripe.png"
+                            width={50}
+                            height={30}
+                            alt="stripe"
+                        />
+
+                    </div>
+
+                    <p className="footerCopy">
+
+                        © 2024 AI Content Automation.
+                        All rights reserved.
+
+                        &nbsp; Privacy Policy · Terms Policy · Terms of Service
+
+                    </p>
+
+                </div>
 
             </footer>
 

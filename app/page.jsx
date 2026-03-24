@@ -512,7 +512,7 @@ function page() {
 
 
 
-      <footer className="footerStyle">
+      <footer className="footerStyle p-5">
 
         <div className="container">
 
